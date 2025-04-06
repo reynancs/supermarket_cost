@@ -1,3 +1,7 @@
+
+# Arquivo de credenciais do banco
+db_config.json
+
 # Data
 /data/
 

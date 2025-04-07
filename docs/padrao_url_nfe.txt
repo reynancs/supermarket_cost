@@ -1,0 +1,10 @@
+ O que significam os valores após a chave de acesso? (exemplo real da nota)
+ p = CHAVE|VER|AMBIENTE|TIPO_EMISSOR|DIGEST
+
+1. CHAVE:  Chave de acesso da NFC-e (29250306057223048450650150000775861151017568)
+2. VERSÃO=2: Versão do QR Code (ex: 2 = layout da 2ª versão)
+3. AMBIENTE=1: produção = 1, Homologação (teste) = 2
+4. TIPO_EMISSOR=1:  geralmente 1 = normal, 2 = contingência
+5. DIGEST/HASH: DigestValue (resumo criptográfico SHA1 ou SHA256)
+O DigestValue é uma assinatura que autentica a URL (como um "hash de verificação" da NFC-e), criado com base nos dados da nota e certificado digital.
+ Ele evita alterações manuais ou falsificações na URL.
